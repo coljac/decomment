@@ -12,7 +12,7 @@ This is an alpha version of the software, use with caution.
 
 # Installation
 
-Install with `go install github.com/coljac/decomment/cmd/dec`, or download a binary from the Releases page.
+Install with `go install github.com/coljac/decomment/cmd/dec@v0.0.1`, or download a binary from the Releases page.
 
 # Known issues
 
