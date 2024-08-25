@@ -1,0 +1,8 @@
+class DirectoryLister
+  def self.list_files
+    Dir.entries('.').select { |file| !File.directory?(file) }
+  end
+end
+
+puts DirectoryLister.list_files
+

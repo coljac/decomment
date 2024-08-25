@@ -1,0 +1,21 @@
+-- list_files.sql
+CREATE OR REPLACE PROCEDURE list_files
+IS
+    v_output VARCHAR2(32767);
+BEGIN
+    v_output := ''; -- comment
+
+    FOR file IN (SELECT utl_file.fgetattr('YOUR_DIRECTORY_ALIAS', filename) AS filename
+                 FROM (SELECT filename FROM all_directories))
+    LOOP
+        v_output := v_output || file.filename || CHR(10);
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE(v_output);
+END;
+-- comment
+
+/
+
+EXEC list_files;
+

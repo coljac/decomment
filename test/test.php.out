@@ -1,0 +1,11 @@
+<?php
+class FileLister {
+    public function listFiles() {
+        return scandir(getcwd());
+    }
+}
+
+$lister = new FileLister();
+print_r($lister->listFiles());
+?>
+

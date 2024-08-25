@@ -1,0 +1,11 @@
+a = 12
+b = 12
+"Another #hashtag"
+
+print(ok)
+v = "OK, here's a hard one"
+"""This
+is a long string # noc
+# And this isn't a comment
+"""
+a = 12
