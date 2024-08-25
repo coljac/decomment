@@ -8,9 +8,11 @@ If your source file is malformed, the output is undefined; e.g. an unclosed stri
 
 `#!` on the first line is preserved.
 
+This is an alpha version of the software, use with caution.
+
 # Installation
 
-Install with `go get github.com/coljac/decomment`, or download a binary from the Releases page.
+Install with `go install github.com/coljac/decomment/cmd/dec`, or download a binary from the Releases page.
 
 # Known issues
 
@@ -25,5 +27,5 @@ Version 0.1.0 will have:
 - Help/man page
 - Specify file type with a flag, i.e. `decomment -f java ...`
 - Custom delimiters from the command line (`decomment -c "/*,*/" my_file.foo`)
-- In-place comment removal (`decomment -i query.sql`) 
+- In-place comment removal (`decomment -i query.sql`)
 - An expanded list of source file types
