@@ -1,0 +1,31 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-go@v3
+      with:
+        go-version: '1.20'
+    - name: Build
+      run: |
+        make build-linux
+        make build-linux-arm
+        make build-mac
+        make build-windows
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          bin/linux/amd64/dec
+          bin/linux/arm/dec
+          bin/darwin/amd64/dec
+          bin/darwin/arm64/dec
+          bin/windows/amd64/dec.exe
+
