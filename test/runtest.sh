@@ -10,7 +10,6 @@ for file in test.*; do
     diff "$file.done" "$file.out" > /dev/null
     if [[ $? -ne 0 ]]; then
       echo "Error: $file.done does not match $file.out"
-      # diff $file.done $file.out
     else
         rm "$file.done"
     fi
