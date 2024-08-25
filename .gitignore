@@ -23,6 +23,7 @@ go.work.sum
 
 bin
 dec
+.vscode
 
 # env file
 .env
