@@ -7,7 +7,7 @@
 *.dll
 *.so
 *.dylib
-
+*_debug_*
 # Test binary, built with `go test -c`
 *.test
 
@@ -22,7 +22,7 @@ go.work
 go.work.sum
 
 bin
-dec
+
 .vscode
 
 # env file
