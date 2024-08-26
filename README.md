@@ -55,23 +55,20 @@ Some weird file format:
 
 `dec` knows about commments and strings in:
 
-| syntax | File extension|
-|---|--------------------|
-| C/C++ | .c, .h, .cpp, .hpp |
-| Java | .java |
-| Rust | .rs |
-| Python | .py |
-| (z\|ba)?sh | .sh |
-| Go | .go |
-|    Kotlin | .kt |
-|    JavaScript | .js |
-|    TypeScript | .ts |
-|    Perl | .pl |
-|    Ruby | .rb |
-|    SQL | .sql |
-|    PHP | .php |
-|    HTML | .html |
-|    CSS |  .css |
- 
-
-
+| syntax     | File extension     |
+| ---------- | ------------------ |
+| C/C++      | .c, .h, .cpp, .hpp |
+| Java       | .java              |
+| Rust       | .rs                |
+| Python     | .py                |
+| (z\|ba)?sh | .sh                |
+| Go         | .go                |
+| Kotlin     | .kt                |
+| JavaScript | .js                |
+| TypeScript | .ts                |
+| Perl       | .pl                |
+| Ruby       | .rb                |
+| SQL        | .sql               |
+| PHP        | .php               |
+| HTML       | .html              |
+| CSS        | .css               |
