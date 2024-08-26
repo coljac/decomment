@@ -12,6 +12,8 @@ BINARY_WINDOWS=$(BINARY_NAME)_win
 BINARY_MAC=$(BINARY_NAME)_darwin
 OUTPUT_DIR=bin
 
+release: 
+	cd $(OUTPUT_DIR) && xonsh ../release.xsh
 
 all: build-all
 
@@ -47,5 +49,5 @@ build-mac:
 build-windows:
 	CGO_ENABLED=0 GOOS=windows GOARCH=amd64 $(GOBUILD) -o $(OUTPUT_DIR)/windows/amd64/$(BINARY_NAME).exe -v ./cmd/dec
 
-.PHONY: all build test clean run deps build-linux build-mac build-windows
+.PHONY: all build test clean run deps build-linux build-mac build-windows release
 
